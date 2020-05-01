@@ -1,6 +1,6 @@
 import firebase from 'firebase';
 
-const firebaseConfig = {
+const config = {
     apiKey: "AIzaSyDqGXeGO14a-ZkWTeG7Wr-pASEmLLJik30",
     authDomain: "bus-booking-43159.firebaseapp.com",
     databaseURL: "https://bus-booking-43159.firebaseio.com",
