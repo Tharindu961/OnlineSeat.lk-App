@@ -3,6 +3,8 @@ import { Link } from 'react-dom';
 import fire from './config/Fire';
 import { analytics } from 'firebase';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './Login.css';
+import Logo from './images/confirm.png';
 
 class Login extends Component {
     constructor(props) {
@@ -38,10 +40,19 @@ class Login extends Component {
 
     render() {
         return (
+        <div className="background">
+            <div className="title">
+            <div className="title-text">
+                <h1>Welcome to</h1>
+                </div>
+                <div className="img-responsive">
+                <img src={Logo} ></img> 
+                </div>
+                </div>
             <div className="col-md-6">
                 <form>
                     <div class="form-group">
-                        <label for="exampleInputEmail">Email address</label>
+                        <label for="exampleInputEmail">Email Address</label>
                         <input value={this.state.email} onChange={this.handleChange} type="email" name="email"
                         class="form-control" id="exampleInputEmail" aria-describedby="emailHelp"
                         placeholder="Enter email" />
@@ -58,6 +69,8 @@ class Login extends Component {
                     <button onClick={this.signup} style={{marginLeft: '25px'}} className="btn btn-success">Signup</button>
                 </form>
             </div>
+            
+        </div>
         );
     }
 
