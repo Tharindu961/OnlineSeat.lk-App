@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-dom';
 import fire from './config/Fire';
 import { analytics } from 'firebase';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class Login extends Component {
     constructor(props) {
@@ -54,7 +55,7 @@ class Login extends Component {
 
                     </div>
                     <button type="submit" onClick={this.login} class="btn btn-primary">Login</button>
-                    <button onClick={this.signup} style={{marginLeft: '25px'}} className="btn btn-sucess">Signup</button>
+                    <button onClick={this.signup} style={{marginLeft: '25px'}} className="btn btn-success">Signup</button>
                 </form>
             </div>
         );
